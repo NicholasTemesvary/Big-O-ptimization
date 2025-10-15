@@ -7,9 +7,18 @@ def detect_language(file_path):
     _, ext = os.path.splitext(file_path)
     ext = ext.lower()
     extension_map = {
-        '.py': 'Python', '.js': 'JavaScript', '.java': 'Java', '.cpp': 'C++',
-        '.c': 'C', '.cs': 'C#', '.html': 'HTML', '.php': 'PHP', '.rb': 'Ruby',
-        '.go': 'Go', '.rs': 'Rust', '.sh': 'Shell Script'
+        '.py': 'Python', 
+        '.js': 'JavaScript', 
+        '.java': 'Java', 
+        '.cpp': 'C++',
+        '.c': 'C', 
+        '.cs': 'C#', 
+        '.html': 'HTML', 
+        '.php': 'PHP', 
+        '.rb': 'Ruby',
+        '.go': 'Go', 
+        '.rs': 'Rust', 
+        '.sh': 'Shell Script'
     }
     if ext in extension_map:
         return extension_map[ext]
